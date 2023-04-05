@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New account</title>
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css" media=" only screen and (min-width:1000px)">
+		<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet2.css" media="only screen and (max-width:375px)">
+		<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet3.css" media="only screen and (
+		min-width:765px) and (max-width:1000px)">
+		<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet4.css" media="only screen and (
+		min-width:375px) and (max-width:765px)">
+		<link rel = "shortcut icon" type = "image.ico" href = "./pictures/icon.ico">
+	</head>
+	<body class="intro">
+		<div class="main">
+			<div class = "new_mail">
+				<h2 class = "new_account_mail_password"> <i>User</i> </h2>
+				<input type="text" name="mail_input_first" placeholder="Adresa de mail...." class="mail_input" id="mail_input_first">
+			</div>
+			<div class = "confirm_mail">
+				<h2 class = "new_account_mail_password"> <i>Confirm User</i> </h2>
+				<input type="text" name="mail_input_confirm" placeholder="Confirma mail...." class="mail_input" id ="mail_input_confirm">
+			</div>
+			<div class = "new_password">
+				<h2 class = "new_account_mail_password"> <i>Password</i> </h2>
+				<input type="password" name="password_input_first" placeholder="Parola...." class = "parola_input" id="password_input_first">
+			</div>
+			<div class = "confirm_password">
+				<h2 class = "new_account_mail_password"> <i>Confirm Password</i> </h2>
+				<input type="password" name="password_input_confirm" placeholder="Confirma parola...." class = "parola_input" id = "password_input_confirm">
+            </div>
+            <div class = "new_create_account_2">
+                <button class = "back">Back</button>
+                <button class = "create_account">Create</button>
+            </div>
+		</div>
+		<script type="text/javascript" src = "./scripts/script.js"></script>
+		<script src="/__/firebase/8.4.2/firebase-app.js"></script>
+    
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="/__/firebase/8.4.2/firebase-analytics.js"></script>
+		
+		<!-- Initialize Firebase -->
+		<script src="/__/firebase/init.js"></script>
+	</body>
+</html>

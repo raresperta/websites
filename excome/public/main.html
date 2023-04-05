@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Excome</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css" media=" only screen and (min-width:1000px)">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet2.css" media="only screen and (max-width:375px)">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet3.css" media="only screen and (
+	min-width:765px) and (max-width:1000px)">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet4.css" media="only screen and (
+	min-width:375px) and (max-width:765px)">
+	<link rel = "shortcut icon" type = "image.ico" href = "./pictures/icon.ico">
+</head>
+<body>
+	<div class = "main_page">
+		<div class = "header">
+
+		</div>
+		<div class = "nav">
+			<ul>
+				<li class = "menu_item"><button class = "menu_item_link" id = "home">Home</button></li>
+				<li class = "menu_item"><button class = "menu_item_link" id = "extra">Extra</button></li>
+				<li class = "menu_item"><button class = "menu_item_link" id = "settings">Options</button></li>
+				<li class = "menu_item"><button class = "menu_item_link" id = "log_out">Exit</button></li>
+			</ul>
+		</div>
+		<div class = "budget">
+			Budget: 0
+		</div>
+		<div class = "new_income_expense">
+			<select class = "select">
+				<option value  = "income">+</option>
+				<option value = "expense">-</option>
+			</select>
+			<input type = "text" class = "income_expense_name" placeholder = "name....">
+			<input type = "number" class = "sum" placeholder = "sum...">
+			<select style="margin-left:10px;margin-top:1px;" class = "currency">
+				<option>--</option>
+				<option value = "lei">Lei</option>
+				<option vlaue = "dolari">$</option>
+				<option vlaue = "euro">€</option>
+			</select>
+		</div>
+		<div class = "income_expense">
+			<div class="income">
+				Income: 0
+			</div>
+			<div class="expense">
+				Expense : 0
+			</div>
+			<div class = "containers">
+				<div class = "income_container">
+					<!--<div class="excome">
+						<div class="nameOfExcome" id = "%name%">
+							%Name%
+						</div>
+						<div class="sumOfExcome" id = "%sum%">
+							%Sum%
+						</div>
+						<button class = "delete">
+							<img class="icon_x" src="./pictures/icon.png">
+						</button>
+					</div>-->
+				</div>
+				<div class = "expense_container">
+					<!--<div class="excome">
+						<div class="nameOfExcome" id = "%name%">
+							%Name%
+						</div>
+						<div class="sumOfExcome" id = "%sum%">
+							%Sum%
+						</div>
+						<button class = "delete">
+							<img class="icon_x" src="./pictures/icon.png">
+						</button>
+					</div>-->
+				</div>
+			</div>
+		</div>
+		<div class="modal">
+			<div class="modal_content">
+				<h2>Would you like to delete the sum as well?</h2>
+				<hr style="color:white;">
+				<button class="yn" id="yes">Yes</button>
+				<button class="yn" id="no">No</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src = "./scripts/script.js"></script>
+	<script src="/__/firebase/8.4.2/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.4.2/firebase-analytics.js"></script>
+    
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+</body>
+</html>
